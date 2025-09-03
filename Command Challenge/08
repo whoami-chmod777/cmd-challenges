@@ -7,7 +7,7 @@ Copy the file named take-the-command-challenge to the directory tmp/files
 Correct! You have a new challenge!
 
 
->> View Solutions <<
+View Solutions:
 
 cp take-the-command-challenge tmp/files
 cp take-the-command-challenge tmp/files/
