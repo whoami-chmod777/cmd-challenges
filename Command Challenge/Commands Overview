@@ -2,4 +2,6 @@
 --- Commands Overview ---
 
 1. print "hello world"
+2. Print the current working directory.
+
 
