@@ -7,7 +7,7 @@ A symbolic link is a type of file that is a reference to another file. Create a 
 Correct! You have a new challenge!
 
 
->> View Solutions <<
+View Solutions:
 
 ln -s tmp/files/take-the-command-challenge take-the-command-challenge
 ln -s tmp/files/take-the-command-challenge
