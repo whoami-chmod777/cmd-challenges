@@ -1,0 +1,66 @@
+
+List names of all the files in the current directory, one file per line.
+
+(0)> ls 
+
+
+Correct! You have a new challenge!
+
+01-take.txt
+02-the.txt
+03-command.txt
+04-challenge.txt
+
+
+View Solutions: 
+
+ls
+ls -1
+ls -A
+ls /var/challenges/list_files
+ls -h
+ls *
+ls .
+ls -L
+ls $pwd
+dir -1
+ls -r
+ls | cat
+ls -p
+ls $PWD
+ls -p | grep -v /
+ls -c
+ls -t
+ls ./
+find *
+ls -F
+for f in *;do echo "$f";done
+ls\
+ls -l | awk '{print $9}'
+ls -v
+for FILE in *; do echo $FILE; done
+ls -N
+ls -b
+ls | sort
+ls|cat
+ls | more
+ls -H
+ls -q
+ls \
+ls -A1
+for f in *;do echo $f;done
+ls -S
+for f in *; do echo $f; done
+ls -1A
+for i in *; do echo $i; done
+for f in *; do echo "$f";done
+ls |cat
+printf '%s\n' *
+ls -AA
+find . -type f| cut -d "/" -f2
+ls -ch
+find . -maxdepth 1 -type f -printf "%f\n"
+ls -C1
+ls -1 .
+ls | tr ' ' '\n'
+ls ; echo ""
