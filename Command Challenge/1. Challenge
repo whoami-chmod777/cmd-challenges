@@ -1,6 +1,64 @@
 
 Your first challenge is to print "hello world" on the terminal in a single command.
+
 Hint: There are many ways to print text on the command line, one way is with the 'echo' command. Try it below and good luck!
 
+(0)> echo "hello world" 
 
 
+Correct! You have a new challenge!
+
+
+
+View Solutions
+
+echo "hello world"
+echo hello world
+echo 'hello world'
+printf "hello world"
+echo hello\ world
+printf 'hello world'
+echo "hello world";
+'echo' hello world
+'echo' "hello world"
+echo " hello world"
+echo "hello world "
+printf "hello world\n"
+echo  "hello world"
+cat <<< "hello world"
+echo -n "hello world"
+echo ''hello world''
+echo 'hello world';
+echo ""hello world""
+echo " hello world "
+echo $"hello world"
+echo  hello world
+printf "%s" "hello world"
+printf "hello world";
+echo hello world;
+echo 'hello world '
+echo -n hello world
+echo "hello world" > hello.txt && cat hello.txt
+echo  'hello world'
+echo -e "hello world"
+echo ""hello world
+"echo" hello world
+'echo' 'hello world'
+command echo hello world
+echo "hello world"\
+printf '%s' "hello world"
+echo "hello world" >> file1 && cat file1
+echo 'hello world' ;
+echo -e hello world
+echo ' hello world'
+echo "hello world" >> texto.txt | cat texto.txt
+echo "uryyb jbeyq" | tr '[n-za-m]' '[a-z]'
+echo -ne "hello world"
+printf '%s\n' 'hello world'
+echo "hello world"; touch text.txt
+echo "hello "world
+printf '%s %s\n' hello world
+echo -e ''hello world''
+printf -- "hello world\n"
+printf "%s %s" hello world
+'echo' "hello world";
