@@ -1,0 +1,69 @@
+
+Create a directory named tmp/files in the current working directory
+Hint: The directory "tmp/" doesn't exist, with one command you need to create both "tmp/" and "tmp/files"
+
+(0)> mkdir tmp/ tmp/files 
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+mkdir -p tmp/files
+mkdir tmp tmp/files
+mkdir tmp && mkdir tmp/files
+mkdir tmp/ tmp/files
+mkdir tmp && cd tmp && mkdir files
+mkdir -p ./tmp/files
+mkdir tmp/files -p
+mkdir tmp; mkdir tmp/files
+mkdir tmp/ && mkdir tmp/files
+mkdir -p  tmp/files
+mkdir tmp ; cd tmp ; mkdir files
+mkdir tmp; cd tmp; mkdir files
+mkdir "tmp/" "tmp/files"
+mkdir tmp mkdir tmp/files
+mkdir -p tmp/files/
+mkdir tmp ; mkdir tmp/files
+mkdir tmp touch tmp/files
+mkdir -p "tmp/files"
+mkdir tmp;mkdir tmp/files
+mkdir "tmp" "tmp/files"
+mkdir tmp/ mkdir tmp/files
+
+mkdir tmp
+  cd tmp
+  mkdir files
+
+mkdir -p tmp tmp/files
+mkdir tmp  tmp/files
+mkdir ./tmp && mkdir ./tmp/files
+mkdir -pv tmp/files
+mkdir ./tmp ./tmp/files
+mkdir tmp/ & mkdir tmp/files
+mkdir tmp/ touch tmp/files
+mkdir tmp;cd tmp;mkdir files
+mkdir tmp && mkdir ./tmp/files
+mkdir 'tmp' 'tmp/files'
+mkdir tmp/; mkdir tmp/files
+
+mkdir tmp
+  mkdir tmp/files
+
+mkdir tmp/ tmp/files/
+mkdir 'tmp/' 'tmp/files'
+mkdir tmp/ ; mkdir tmp/files
+mkdir tmp|mkdir tmp/files
+mkdir -p ./tmp/files/
+mkdir  -p tmp/files
+mkdir tmp && cd tmp/ && mkdir files
+mkdir tmp ./tmp/files
+mkdir -p tmp/ tmp/files
+mkdir --parents tmp/files
+mkdir {tmp,tmp/files}
+mkdir tmp tmp/files/
+mkdir tmp/ && cd tmp && mkdir files
+mkdir tmp tmp//files
+mkdir {tmp/,tmp/files}
+mkdir tmp/ && cd tmp/ && mkdir files
