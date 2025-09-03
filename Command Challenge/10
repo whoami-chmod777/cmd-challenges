@@ -1,0 +1,58 @@
+
+A symbolic link is a type of file that is a reference to another file. Create a symbolic link named take-the-command-challenge that points to the file tmp/files/take-the-command-challenge.
+
+(1)> ln -s tmp/files/take-the-command-challenge take-the-command-challenge 
+
+
+Correct! You have a new challenge!
+
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge
+ln -s tmp/files/*
+ln -s tmp/files/take-the-command-challenge "take-the-command-challenge"
+ln -s  tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s ./tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s "tmp/files/take-the-command-challenge" "take-the-command-challenge"
+ln -s tmp/files/take-the-command-challenge .
+ln -s tmp/files/take-the-command-challenge  take-the-command-challenge
+ln -sf tmp/files/take-the-command-challenge take-the-command-challenge
+cp -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge ./take-the-command-challenge
+ln -s tmp/files/take*
+ln -s ./tmp/files/take-the-command-challenge ./take-the-command-challenge
+ln -s "tmp/files/take-the-command-challenge"
+ln -s  tmp/files/take-the-command-challenge
+ln --symbolic tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s ./tmp/files/take-the-command-challenge
+ln -s "tmp/files/take-the-command-challenge" take-the-command-challenge
+ln tmp/files/take-the-command-challenge take-the-command-challenge -s
+ln -s -T tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge ./
+touch ./tmp/files/take-the-command-challenge | ln -s ./tmp/files/take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge 'take-the-command-challenge'
+ln -s  tmp/files/take-the-command-challenge  take-the-command-challenge
+ln -sf tmp/files/take-the-command-challenge
+ln --symbolic tmp/files/take-the-command-challenge
+ln  -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s  tmp/files/*
+ln tmp/files/take-the-command-challenge -s take-the-command-challenge
+ln -s tmp/files/ta*
+cp -s tmp/files/take-the-command-challenge .
+ln -s ./tmp/files/take-the-command-challenge "take-the-command-challenge"
+cp -s take-the-command-challenge tmp/files/take-the-command-challenge .
+ln -s tmp/files/take-the-command-challenge   take-the-command-challenge
+ln -s   tmp/files/take-the-command-challenge take-the-command-challenge
+cp -s tmp/files/tak* .
+ln -s tmp/files/take* .
+ln -s -f tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s  ./tmp/files/take-the-command-challenge take-the-command-challenge
+ln -sT tmp/files/take-the-command-challenge take-the-command-challenge
+ln tmp/files/take-the-command-challenge . -s && ls -la
+ln -fs tmp/files/take-the-command-challenge take-the-command-challenge
+ln --symbolic ./tmp/files/take-the-command-challenge ./take-the-command-challenge
+ln -s tmp/*/* take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge\
+ln  -s tmp/files/take-the-command-challenge
+ln -sf  tmp/files/take-the-command-challenge
+ln -ns tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s /var/challenges/create_symlink/tmp/files/take-the-command-challenge
