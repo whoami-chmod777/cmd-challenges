@@ -6,10 +6,10 @@ List names of all the files in the current directory, one file per line.
 
 Correct! You have a new challenge!
 
-01-take.txt
-02-the.txt
-03-command.txt
-04-challenge.txt
+1| 01-take.txt
+2| 02-the.txt
+3| 03-command.txt
+4| 04-challenge.txt
 
 
 View Solutions: 
