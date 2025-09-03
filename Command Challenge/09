@@ -1,0 +1,61 @@
+
+Move the file named take-the-command-challenge to the directory tmp/files
+
+(0)> mv take-the-command-challenge tmp/files 
+
+
+Correct! You have a new challenge!
+
+
+>> View Solutions <<
+
+mv take-the-command-challenge tmp/files
+mv take-the-command-challenge tmp/files/
+mv take-the-command-challenge tmp/files/take-the-command-challenge
+mv take-the-command-challenge ./tmp/files
+mv "take-the-command-challenge" tmp/files
+mv take* tmp/files
+mv  take-the-command-challenge tmp/files
+mv take-the-command-challenge tmp/files/.
+mv take-the-command-challenge  tmp/files
+mv take-the-command-challenge ./tmp/files/
+mv ./take-the-command-challenge ./tmp/files
+mv "take-the-command-challenge" "tmp/files"
+mv ./take-the-command-challenge tmp/files
+mv -f take-the-command-challenge tmp/files
+mv 'take-the-command-challenge' tmp/files
+mv take-the-command-challenge to tmp/files
+mv take-the-command-challenge -t tmp/files
+mv take-the-command-challenge ./tmp/files/take-the-command-challenge
+mv ./take-the-command-challenge ./tmp/files/
+mv take-the-command-challenge "tmp/files"
+mv take-the* tmp/files
+mv named take-the-command-challenge tmp/files
+mv  take-the-command-challenge  tmp/files
+mv ./take-the-command-challenge ./tmp/files/take-the-command-challenge
+mv tak* tmp/files
+mv take-* tmp/files
+mv 'take-the-command-challenge' 'tmp/files'
+mv ta* tmp/files
+mv t* tmp/files
+mv take* tmp/files/
+mv -v take-the-command-challenge tmp/files
+mv  take-the-command-challenge tmp/files/
+mv take-the-command-challenge cd tmp/files
+mv take-the-command-challenge / tmp/files
+mv "take-the-command-challenge" tmp/files/
+mv take-the-command-challenge dir tmp/files
+mv -f take-the-command-challenge tmp/files/
+mv take-the-command-challenge . tmp/files
+mv ./take-the-command-challenge tmp/files/
+mv take-the-command-challenge /var/challenges/move_file/tmp/files
+mv ./take-the-command-challenge tmp/files/take-the-command-challenge
+mv 'take-the-command-challenge' tmp/files/
+mv "take-the-command-challenge" ./tmp/files
+mv -i take-the-command-challenge tmp/files
+mv *take* tmp/files
+mv ta* tmp/files/
+mv take* ./tmp/files
+mv take-the-command-challenge -f tmp/files
+mv take-the-command-challenge tmp/files -f
+mv take-the-command-challenge* tmp/files
