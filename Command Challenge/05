@@ -13,3 +13,56 @@ Correct! You have a new challenge!
 5| 200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
 6|
 
+
+View Solutions:
+
+tail -5 access.log
+tail -n 5 access.log
+cat access.log | tail -5
+tail -n5 access.log
+cat access.log | tail -n 5
+tail access.log -n 5
+tail -5 "access.log"
+tail -5 *
+tail -5  access.log
+cat access.log |tail -5
+cat access.log | tail -n5
+tail -5 ./access.log
+tail -n 5 "access.log"
+cat access.log|tail -5
+tail -n 5  access.log
+tail --lines=5 access.log
+tail -n -5 access.log
+tail access.log -n5
+tail -n 5 ./access.log
+tail --lines 5 access.log
+tail -5 'access.log'
+cat access.log| tail -5
+tail  -5 access.log
+tail -5 a*
+cat "access.log" | tail -5
+cat access.log|tail -n 5
+tail access.log --lines=5
+cat access.log |tail -n 5
+cat access.log | tail -n -5
+tail -n5 *
+tail -5 acc*
+sed -n 6,10p access.log
+awk '{if(NR>5) print $0}' access.log
+sed -n '6,10p' access.log
+tail -n 5 /var/challenges/last_lines/access.log
+cat ./access.log | tail -5
+tail -5 *g
+tail -n5  access.log
+tail  -n 5 access.log
+cat access.log| tail -n 5
+'tail' -5 access.log
+tail access.log -n -5
+tail -5 *.log
+tail --line=5 access.log
+cat  access.log | tail -5
+cat access.log | tail -5f
+tail -5 access*
+tail -n 5 *.log
+tail -n 5 ac*
+tail -5l access.log
