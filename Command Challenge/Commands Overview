@@ -5,7 +5,14 @@
 02. Print the current working directory.
 03. List names of all the files in the current directory, one file per line.
 04. There is a file named access.log in the current directory. Print the contents.
-
+05. Print the last 5 lines of "access.log".
+06. Create an empty file named take-the-command-challenge in the current working directory.
+07. Create a directory named tmp/files in the current working directory
+08. Copy the file named take-the-command-challenge to the directory tmp/files
+09. Move the file named take-the-command-challenge to the directory tmp/files
+10. A symbolic link is a type of file that is a reference to another file.
+11. Delete all of the files in this challenge directory including all subdirectories and their contents.
+12. 
 
 
 
