@@ -2,9 +2,70 @@
 Delete all of the files in this challenge directory including all subdirectories and their contents.
 Hint: There are files and directories that start with a dot ".", "rm -rf *" won't work here!
 
-(0)> 
+(1)> rm -rf * .* 
 
 
+Correct! You have a new challenge!
 
 
 View Solutions:
+
+rm -rf * .*
+find . -delete
+find -delete
+rm -r * .*
+find . -mindepth 1 -delete
+rm -rf .* *
+rm -rf .[^.]* *
+rm -rf {*,.*}
+rm -rf ./* ./.*
+rm -r .* *
+rm -rf * && rm -rf .*
+find . -exec rm -rf {} \;
+ls -a | xargs rm -rf
+rm -rf -- ..?* .[!.]* *
+rm -rv /var/challenges/delete_files && mkdir /var/challenges/delete_files
+rm -rf $(ls -a)
+rm -fr * .*
+rm -rf ./{*,.*}
+
+rm -rf ./*
+  rm -rf ./.*
+
+rm -rf {,.[!.],..?}*
+rm -rf .[!.]* *
+ls -A1 | xargs rm -rf
+find ./ -delete
+rm -R * .*
+rm -rf ./* .*
+find . | xargs rm -rf
+rm -rf ..?* .[!.]* *
+rm -rf /var/challenges/delete_files/{*,.*}
+find . -type f,d -delete
+rm -r $(ls -a)
+find . -name "*" -delete
+
+rm -rf * .*
+  find . -delete
+
+rm -rf  * .*
+find . * -delete
+find -mindepth 1 -delete
+find /var/challenges/delete_files -mindepth 1 -delete
+rm -fr .* *
+ls -A | xargs rm -rf
+rm -r ./* .*
+rm -R .* *
+ls -a | xargs rm -r
+rm -Rf * .*
+find . -name . -o -prune -exec rm -rf -- {} +
+rm -dr * .*
+rm -rfv * .*
+rm -r * / .*
+rm -rf ./.* ./*
+rm -r * && rm -r .*
+
+rm -rf ./*
+  rm -rf .[^.] .??*
+
+rm -rfv /var/challenges/delete_files/{*,.*}
