@@ -1,0 +1,70 @@
+
+There is a file named access.log in the current working directory. Print all lines in this file that contains the string "GET".
+
+(0)> cat access.log | grep GET 
+
+1| 163.56.115.58 - - [09/Jan/2017:22:29:57 +0100] "GET /posts/2/display HTTP/1.0" 200 3240
+2| 75.113.188.234 - - [09/Jan/2017:22:30:43 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 1116
+3| 69.16.40.148 - - [09/Jan/2017:22:34:33 +0100] "GET /pages/create HTTP/1.0" 500 3471
+4| 225.219.54.140 - - [09/Jan/2017:22:35:30 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 500 2477
+5| 207.243.19.2 - - [09/Jan/2017:22:38:03 +0100] "GET /bar/create HTTP/1.0" 200 1116
+6| 199.37.62.156 - - [09/Jan/2017:22:42:18 +0100] "GET /posts/1/display HTTP/1.0" 200 2477
+7| 251.111.109.143 - - [09/Jan/2017:22:49:02 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 2477
+8| 200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+grep GET access.log
+grep "GET" access.log
+cat access.log | grep GET
+cat access.log | grep "GET"
+grep 'GET' access.log
+cat access.log | grep 'GET'
+grep 'GET' ./access.log
+cat access.log | grep -e "GET"
+cat access.log |grep GET
+grep -i "GET" access.log
+grep GET *
+cat access.log|grep GET
+grep "GET" ./access.log
+cat access.log |grep "GET"
+cat access.log|grep "GET"
+cat access.log | grep -i "GET"
+grep "GET" *
+grep GET ./access.log
+grep -i get access.log
+grep GET  access.log
+cat access.log | grep -i GET
+grep -w "GET" access.log
+cat access.log | grep -i get
+grep -i GET access.log
+grep -r "GET" access.log
+grep -i "get" access.log
+cat access.log| grep GET
+grep -F "GET" access.log
+grep -e "GET" access.log
+grep "GET"  access.log
+grep "GET" "access.log"
+cat access.log | grep -E "GET"
+grep -w GET access.log
+grep  "GET" access.log
+cat access.log|grep 'GET'
+cat access.log| grep "GET"
+awk '/GET/ {print}' access.log
+cat access.log | grep -i "get"
+grep -F 'GET' access.log
+tail access.log | grep "GET"
+grep -i 'GET' access.log
+tail access.log | grep GET
+grep -e GET access.log
+grep -F GET access.log
+cat ./access.log | grep GET
+cat access.log | grep -e GET
+cat access* | grep GET
+grep  GET access.log
+grep GET **access.log
+grep "GET" access*
