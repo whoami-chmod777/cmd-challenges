@@ -1,0 +1,69 @@
+
+There are files in this challenge with different file extensions. Remove all files with the .doc extension recursively in the current working directory.
+
+(0)> find . -type f -name "*.doc" 
+
+1| ./2038/01/19/animi.doc
+2| ./2038/01/19/odit.doc
+3| ./error.doc
+4| ./necessitatibus.doc
+5|
+
+(0)> find . -type f -name "*.doc" -delete 
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+rm **/*.doc
+find . -name "*.doc" -delete
+rm -rf **/*.doc
+rm -r **/*.doc
+find . -type f -name "*.doc" -delete
+find . -name "*.doc" -type f -delete
+find . -name '*.doc' -delete
+find -name "*.doc" -delete
+find . -type f -name "*.doc" -exec rm -f {} +
+find . -type f -name "*.doc" -exec rm {} \;
+find . -type f -name "*.doc" -exec rm -f {} \;
+rm **/*doc
+find . -type f -name "*.doc" -exec rm {} +
+find . -type f -name '*.doc' -delete
+find -name '*.doc' -delete
+find -type f -name "*.doc" -delete
+rm **/**.doc
+rm -r **/*doc
+find . -name "*.doc" -exec rm {} \;
+find . -name "*.doc" | xargs rm
+rm -rf **/*doc
+rm -f **/*.doc
+rm  **/*.doc
+find . -name '*.doc' -type f -delete
+find . -name "*.doc" -exec rm -rf {} \;
+find . -iname "*.doc" -delete
+find -name "*.doc" -type f -delete
+rm -rf **/**.doc
+find ./ -name "*.doc" -delete
+rm -R **/*.doc
+find . -name '*.doc' -exec rm {} \;
+rm -rf ./**/*.doc
+find . -name "*doc" -delete
+find . -type f -name "*.doc" -exec rm -rf {} \;
+find -type f -name '*.doc' -delete
+rm -fr **/*.doc
+find -name "*.doc" | xargs rm
+rm **/*.doc -r
+rm -rv **/*.doc
+find . -type f -iname "*.doc" -delete
+rm **/*doc -r
+rm -v **/*.doc
+find . -name \*.doc -delete
+find . -name "*.doc"  -delete
+find . -name '*doc' -delete
+rm  -r **/*.doc
+rm -f *.doc **/*.doc
+find . -iname '*.doc' -delete
+find -name "*.doc" -exec rm {} \;
+find . -type f -name '*.doc' -exec rm {} +
