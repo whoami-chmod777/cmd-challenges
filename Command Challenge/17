@@ -1,3 +1,83 @@
 
 Extract all IP addresses from files that start with "access.log" printing one IP address per line.
 
+(0)> grep -ro ^[0-9.]* .
+
+1| ./var/log/httpd/access.log:163.56.115.58
+2| ./var/log/httpd/access.log:75.113.188.234
+3| ./var/log/httpd/access.log:69.16.40.148
+4| ./var/log/httpd/access.log:225.219.54.140
+5| ./var/log/httpd/access.log:207.243.19.2
+6| ./var/log/httpd/access.log:199.37.62.156
+7| ./var/log/httpd/access.log:55.74.240.123
+8| ./var/log/httpd/access.log:251.111.109.143
+9| ./var/log/httpd/access.log:101.163.230.250
+10| ./var/log/httpd/access.log:200.19.168.148
+11| ./var/log/httpd/access.log.1:108.68.174.15
+12| ./var/log/httpd/access.log.1:17.2.20.139
+13| ./var/log/httpd/access.log.1:28.151.137.59
+14| ./var/log/httpd/access.log.1:199.150.241.179
+15| ./var/log/httpd/access.log.1:2.71.250.27
+16| ./var/log/httpd/access.log.1:17.137.186.194
+17| ./var/log/httpd/access.log.1:151.84.119.34
+18| ./var/log/httpd/access.log.1:4.180.204.195
+19| ./var/log/httpd/access.log.1:9.230.96.54
+20| ./var/log/httpd/access.log.1:157.143.233.21
+21|
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+grep -ro ^[0-9.]*
+cat **/access.log* | grep -ro ^[0-9.]*
+awk '{print $1}' **/access.log*
+find . -name "access.log*" | xargs grep -Eo '^[^ ]+'
+grep -rhEo "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" **/access.log*
+grep -or ^[0-9.]*
+grep -ro ^[0-9.]* .
+cat **/access.log* | awk '{print $1}'
+grep -r . | awk '{print $1}'
+grep -roh ^[0-9.]*
+grep -ro ^[0-9.]* **/access.log*
+grep -r -h -o '[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*' --include 'access.log*'
+grep -r -o ^[0-9.]*
+find . -name "access.log*" -exec awk '{print $1}' {} \;
+grep -ro ^[*-9]*
+grep -rho '^[0-9.]*' --include access.log*
+grep -oh ^[0-9.]* **/access.log*
+grep -ro "^[0-9.]*"
+awk '{ print $1 }' **/access.log*
+find -name access.log* -exec awk '{print $1}' {} \;
+grep -ro '^[0-9.]*'
+grep -ro  ^[0-9.]*
+grep -o ^[0-9.]* **/access.log*
+grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" $(find . -type f -name "access.log*")
+find . -type f -name "access.log*" -exec grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" {} \;
+find -name "access.log*" -type f | grep -ro ^[0-9.]*
+grep  -ro ^[0-9.]*
+find . -name "access.log*" | grep -ro ^[0-9.]*
+grep -rho ^[0-9.]*
+find . -name 'access.log*' -exec awk '{print $1}' {} \;
+grep -Ro ^[0-9.]*
+grep -ro ^[*-9.]*
+find . -type f -name "access.log*" -exec grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' {} \;
+grep -E ^[0-9.]* -rho
+grep -hr . | awk '{print $1}'
+for i in $(find . -name "access.log*"); do cat $i | awk '{print $1}'; done
+grep -Eoh "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)" **/access.log*
+grep -roE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+find -name 'access.log*' | grep -ro -E "([0-9]{1,3}[\.]){3}[0-9]{1,3}"
+find . -name "access.log*" -exec egrep -ho "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" {} \;
+find -name "access.log*" -exec egrep -o "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" {} \;
+grep -rw . | awk '{print $1}'
+grep -Pho '^\d+\.\d+\.\d+\.\d+' **/access.log*
+grep -oh '[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*' **/access.log*
+grep -rhEo "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}"
+grep -r \.|awk '{print $1}'
+grep -ro ^[0-9.]*  **/access.log*
+grep -Goh ^[0-9.]* **/access.log*
+find -name access.log\* -exec awk '{print $1}' {} \;
+grep -R -o -E "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" * | cat
