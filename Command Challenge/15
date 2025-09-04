@@ -1,0 +1,65 @@
+
+Print the relative file paths, one path per line for all filenames that start with "access.log" in the current directory.
+
+(0)> ls * 
+
+1| access.log
+2| access.log.1
+3| access.log.2
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+ls
+ls access.log*
+find . -name "access.log*"
+find . -type f -name "access.log*"
+ls | grep access.log
+ls -r access.log*
+find . -type f -name "access.log*" -printf "%P\n"
+find -name "access.log*"
+ls | grep "access.log"
+find . -name 'access.log*'
+find . -maxdepth 1 -type f -name "access.log*"
+ls -1 access.log*
+find . -name "access.log*" -printf "%P\n"
+find access.log*
+ls | grep "access.log*"
+find . -name "access.log*" -type f -printf "%P\n"
+ls *
+find . -type f -name "access.log*" -print
+find . -type f -name 'access.log*'
+find -type f -name "access.log*"
+ls -r
+find . -type f -name "access.log*" -exec basename {} \;
+find -name 'access.log*'
+ls -1
+find . -type f -name 'access.log*' -printf "%P\n"
+ls -d access.log*
+find . -name "access.log*" -print
+find . -name "access.log*" -type f
+ls -p
+ls "access.log"*
+ls -h
+ls | grep "^access.log"
+ls ./access.log*
+grep "access.log" | ls
+ls -a access.log*
+ls access*
+find ./ -name "access.log*"
+ls -F
+find . -iname "access.log*"
+find . -maxdepth 1 -type f -name "access.log*" -printf "%P\n"
+ls | grep 'access.log'
+grep access.log | ls
+ls *access.log*
+ls -rt
+ls | grep ^access.log
+find . -name "*access.log*"
+ls  access.log*
+ls access.*
+find . -name 'access.log*' -printf "%P\n"
+find . -type f -name 'access.log*' -printf '%P\n'
