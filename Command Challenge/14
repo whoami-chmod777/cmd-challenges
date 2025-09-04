@@ -1,0 +1,64 @@
+
+Print all files in the current directory, one per line (not the path, just the filename) that contain the string "500".
+
+(0)> grep -l "500" *
+
+1| access.log
+2| access.log.1
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+grep -l 500 *
+grep -l "500" *
+grep -l '500' *
+ls | grep -lr 500
+ls | grep -lR 500
+grep -ls 500 *
+ls | grep -lr "500"
+grep -lr 500
+grep -rl "500"
+grep -rl 500
+grep -l "500" * | xargs -n 1 basename
+grep -lr "500"
+grep 500 * -l
+ls | grep -lR "500"
+grep -l "500" * | xargs -I {} basename {}
+grep 500 -l *
+ls | grep -l "500" *
+grep -rl "500" . | xargs -I {} basename {}
+grep -rl "500" *
+ls | grep -l 500 *
+grep -l "500" * 2>/dev/null
+grep "500" * -l
+grep -ls "500" *
+ls | grep -rl 500
+grep -rl "500" . | xargs -n 1 basename
+grep "500" -l *
+ls | grep -lr '500'
+grep -lr 500 *
+grep -lR 500
+grep -rl '500'
+ls | grep -rl "500"
+grep 500 -lr
+grep -lr '500'
+grep -l  500 *
+find . -type f -exec grep -l "500" {} \; | xargs -n 1 basename
+grep -lR "500"
+grep 500 -rl
+grep -l "500" * | awk -F/ '{print $NF}'
+find . -type f -exec grep -l "500" {} \; | xargs -I {} basename {}
+grep -rl * -e 500
+grep -lr "500" *
+grep -Ril "500"
+cat access.log access.log.1 access.log.2 | grep -lr "500"
+grep -l -r 500
+grep -r -l 500
+grep -Rl "500"
+find . -type f -exec grep -l "500" {} + | xargs -n 1 basename
+grep -rl "500" . | xargs -I{} basename {}
+find . | grep -rl 500
+grep -l "500" * | xargs -I{} basename {}
