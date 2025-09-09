@@ -1,4 +1,64 @@
 
 Print the number of lines in access.log that contain the string "GET".
 
+(0)> cat access.log | grep "GET" | wc -l 
 
+1| 8
+2| 
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+grep GET access.log | wc -l
+grep "GET" access.log | wc -l
+grep -c "GET" access.log
+cat access.log | grep "GET" | wc -l
+cat access.log | grep GET | wc -l
+grep -c GET access.log
+cat access.log | grep -e "GET" | wc --lines
+grep 'GET' access.log | wc -l
+grep -c 'GET' access.log
+grep GET access.log |wc -l
+grep GET access.log|wc -l
+cat access.log | grep 'GET' | wc -l
+grep GET * | wc -l
+grep -c 'GET' ./access.log
+grep "GET" access.log |wc -l
+grep GET access.log| wc -l
+cat access.log | grep -c "GET"
+grep -co GET *
+grep "GET" access.log|wc -l
+cat access.log | grep "GET" | wc --lines
+grep "GET" access.log| wc -l
+cat access.log | grep -c GET
+grep GET  access.log | wc -l
+grep -r "GET" | wc -l
+grep -i "GET" access.log | wc -l
+cat access.log|grep "GET"|wc -l
+grep "GET" * | wc -l
+cat access.log |grep GET |wc -l
+grep -r GET | wc -l
+grep -c "GET" ./access.log
+grep GET access.log  | wc -l
+cat access.log|grep GET|wc -l
+cat access.log | grep "GET" -c
+cat access.log | grep -e "GET" | wc -l
+grep GET * |wc -l
+sort access.log | grep "GET" | wc -l
+grep -o "GET" access.log | wc -l
+grep -i get access.log | wc -l
+grep  GET access.log | wc -l
+cat access.log | grep "GET" |wc -l
+grep -c  GET access.log
+grep -wc GET access.log
+cat access.log | grep -i GET | wc -l
+grep "GET" * |wc -l
+grep -w "GET" access.log | wc -l
+cat access.log | sort | grep GET | wc -l
+grep -ro "GET" | wc -l
+grep -c GET ./access.log
+cat access.log| grep GET | wc -l
+cat access.log | grep GET | wc --lines
