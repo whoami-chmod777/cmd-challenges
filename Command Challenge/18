@@ -1,2 +1,66 @@
 
 Count the number of files in the current working directory. Print the number of files as a single integer.
+
+
+
+
+
+
+
+
+
+
+
+
+View Solutions:
+
+ls -l | wc -l
+find . -type f | wc -l
+find . -maxdepth 1 -type f | wc -l
+ls -A | wc -l
+find . -type f | wc --lines
+ls -l |wc -l
+ls -l|wc -l
+find -type f | wc -l
+ls -l| wc -l
+ls -la | grep -E ^'total [0-9]*|*[0-9] \.$|*[0-9] \.\.$' -v | wc -l
+ls -R | wc -l
+ls -1A | wc -l
+find . -type f -maxdepth 1 | wc -l
+find . -type f |wc -l
+ls -l  | wc -l
+ls -s | wc -l
+ls -A1 | wc -l
+ls -A|wc -l
+find ./ -type f | wc -l
+ls -l | grep -v '^d' | wc -l
+ls -A |wc -l
+ls -A | wc -w
+find -L . -type f | wc -l
+find -maxdepth 1 -type f | wc -l
+find . -type f|wc -l
+ls -l |  wc -l
+find . -type f  | wc -l
+find . -type f -print | wc -l
+find -maxdepth 1 -type f|wc -l |awk '{print $1}'
+find -type f | wc | awk -F' ' '{print $1}'
+ls  -l | wc -l
+ls -A| wc -l
+ls -l | grep -v ^l | wc -l
+ls -s| wc -l
+ls -l | wc --lines
+find . -type f| wc -l
+find . ! -name . -prune -print | grep -c /
+find -type f -maxdepth 1 | wc -l
+ls -ll |wc -l
+ls -ll | wc -l
+find . -mindepth 1 | wc -l
+find -type f|wc -l
+ls -R . | wc -l
+ls -s1 | wc -l
+find -type f| wc -l
+ls -A | echo $(wc -l)
+find . -type f -ls | wc -l
+ls -Ap | grep -v /$ | wc -l
+ls -Aw1 | wc -l
+ls -l |wc --lines
