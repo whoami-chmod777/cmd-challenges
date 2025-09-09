@@ -21,7 +21,8 @@
 18. Count the number of files in the current working directory. Print the number of files as a single integer.
 19. Print the contents of access.log sorted.
 20. Print the number of lines in access.log that contain the string "GET".
-21. 
+21. The file split-me.txt contains a list of numbers separated by a ; character. Split the numbers on the ; character, one number per line.
+22. 
 
 
 
