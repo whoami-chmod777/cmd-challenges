@@ -1,1 +1,62 @@
 
+Print the contents of access.log sorted.
+
+(0)> sort access.log 
+
+Output does not match expected lines - try again
+
+101.163.230.250 - - [09/Jan/2017:22:52:31 +0100] "DELETE /posts/2/display HTTP/1.0" 404 2477163.56.115.58 - - [09/Jan/2017:22:29:57 +0100] "GET /posts/2/display HTTP/1.0" 200 3240199.37.62.156 - - [09/Jan/2017:22:42:18 +0100] "GET /posts/1/display HTTP/1.0" 200 2477200.19.168.148 - - [09/Jan/2017:22:57:11 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 3471207.243.19.2 - - [09/Jan/2017:22:38:03 +0100] "GET /bar/create HTTP/1.0" 200 1116225.219.54.140 - - [09/Jan/2017:22:35:30 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 500 2477251.111.109.143 - - [09/Jan/2017:22:49:02 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 247755.74.240.123 - - [09/Jan/2017:22:44:25 +0100] "POST /posts/1/display HTTP/1.0" 200 347169.16.40.148 - - [09/Jan/2017:22:34:33 +0100] "GET /pages/create HTTP/1.0" 500 347175.113.188.234 - - [09/Jan/2017:22:30:43 +0100] "GET /posts/foo?appID=xxxx HTTP/1.0" 200 1116
+
+
+View Solutions:
+
+sort access.log
+cat access.log | sort
+cat access.log|sort
+cat access.log |sort
+cat access.log | sort -u
+cat "access.log" | sort
+sort *
+sort access.log | cat
+sort < access.log
+cat access.log| sort
+find . -type f -name 'access.log*' |xargs -I{} cat {} | sort
+sort -u access.log
+sort "access.log"
+cat | sort access.log
+ls | sort access.log
+cat access.log | sort access.log
+sort  access.log
+cat access.log | sort -d
+sort a*
+cat  access.log | sort
+sort acc*
+sort 'access.log'
+sort ./access.log
+sort *log
+sort access*
+sort access.log*
+sort -b access.log
+sort -d access.log
+sort <access.log
+sort -f access.log
+cat access.log  | sort
+cat access.log |sort -u
+cat acces* | sort
+cat | sort  access.log
+sort <  access.log
+cat ./access.log | sort
+cat access.log | sort -i
+sort access.log && cat > access.log
+sort access.log || cat
+find . -name access.log | xargs cat | sort
+sort -M access.log
+cat access.log|sort -u
+cat access.log | sort -s
+sort -u < access.log
+tail access.log | sort
+sort < access.log | cat
+cat access.log | sort -b
+cat access.log |uniq|sort
+cat access* | sort
+sort **/access.log*
