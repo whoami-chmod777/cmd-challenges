@@ -1,15 +1,13 @@
 
 Count the number of files in the current working directory. Print the number of files as a single integer.
 
+(0)> find . -type f | wc -l 
+
+1| 2
+2| 
 
 
-
-
-
-
-
-
-
+Correct! You have a new challenge!
 
 
 View Solutions:
