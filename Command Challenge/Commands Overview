@@ -21,6 +21,7 @@
 18. Count the number of files in the current working directory. Print the number of files as a single integer.
 19. Print the contents of access.log sorted.
 20. Print the number of lines in access.log that contain the string "GET".
+21. 
 
 
 
