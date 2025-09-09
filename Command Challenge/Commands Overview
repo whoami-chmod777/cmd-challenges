@@ -19,7 +19,8 @@
 16. Print all matching lines (without the filename or the file path) in all files under the current directory that start with "access.log" that contain the string "500".
 17. Extract all IP addresses from files that start with "access.log" printing one IP address per line.
 18. Count the number of files in the current working directory. Print the number of files as a single integer.
-19. 
+19. Print the contents of access.log sorted.
+20. 
 
 
 
