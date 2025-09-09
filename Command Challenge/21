@@ -1,0 +1,72 @@
+
+The file split-me.txt contains a list of numbers separated by a ; character. Split the numbers on the ; character, one number per line.
+
+(0)> tr ';' '\n' < split-me.txt
+
+1| 1
+2| 2
+3| 3
+4| 4
+5| 5
+6| 6
+7| 7
+8| 8
+9| 9
+10| 10
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+cat split-me.txt | tr ";" "\n"
+tr ';' '\n' < split-me.txt
+cat split-me.txt | tr ';' '\n'
+sed "s/;/\n/g" split-me.txt
+sed 's/;/\n/g' split-me.txt
+cat split-me.txt | sed 's/;/\n/g'
+tr ";" "\n" < split-me.txt
+cat * | tr ';' '\n'
+cat ./split-me.txt | sed s/\;/\\n/g
+cat split-me.txt | sed s/\;/\\n/g
+cat split-me.txt | sed "s/;/\n/g"
+cat split-me.txt | tr ";" '\n'
+cat split-me.txt |tr ";" "\n"
+cat split-me.txt|tr ";" "\n"
+cat split-me.txt | tr ';' "\n"
+cat split-me.txt| tr ";" "\n"
+tr ';' '\n' <split-me.txt
+sed -e 's/;/\n/g' split-me.txt
+cat split-me.txt |tr ';' '\n'
+cat split-me.txt|tr ';' '\n'
+sed 's/\;/\n/g' split-me.txt
+cat split-me.txt| tr ';' '\n'
+cat * | tr ";" "\n"
+cat split-me.txt | tr -s ";" "\n"
+for i in $(cat split-me.txt|sed 's/;/ /g');do echo $i;done
+sed -e "s/;/\n/g" split-me.txt
+cat "split-me.txt" | tr ";" "\n"
+cat split-me.txt | sed -e 's/;/\n/g'
+tr ";" "\n" <split-me.txt
+cat split-me.txt | sed 's/\;/\n/g'
+tr ";" '\n' < split-me.txt
+cat split-me.txt | awk -F";" '{out=""; for(i=1;i<=NF;i++){out=out$i"\n"}; print out}'
+cat split-me.txt | tr \; \\n
+<s* tr ';' '\n'
+for i in $(cat split-me.txt | sed 's/;/ /g'); do echo $i; done
+cat split-me.txt | tr  ";" "\n"
+cat split-me.txt | tr ";", "\n"
+cat * | tr  ';' '\n'
+cat split-me.txt |tr ';' "\n"
+cat split-me.txt|sed 's/;/\n/g'
+tr ';' "\n" < split-me.txt
+cat split-me.txt | sed  "s/;/\n/g"
+cat split-me.txt | sed "s/;/""\n/g"
+cat split-me.txt|tr \; "\n"
+cat split-me.txt |tr \; \\n
+cat split-me.txt |tr \; "\n"
+cat split-me.txt| tr \; "\n"
+sed -e "s/;/\\n/g" split-me.txt
+cat split-me.txt | sed s/";"/"\n"/g
+tr \; \\n < split-me.txt
