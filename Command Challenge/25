@@ -1,0 +1,61 @@
+
+Print all files in the current directory recursively without the leading directory path.
+
+(0)> ls -R | grep [a-z] 
+
+
+Correct! You have a new challenge!
+
+
+View Solutions:
+
+find -type f -exec basename {} \;
+ls -R | grep [a-z]
+find . -type f -printf "%f\n"
+find . -type f -exec basename {} \;
+find -type f -printf '%f\n'
+find . -type f -printf '%f\n'
+ls -R|grep [a-z]
+find -type f -printf "%f\n"
+ls -R |grep [a-z]
+find ./ -type f -printf "%f\n"
+ls -R| grep [a-z]
+ls -r | find -type f -exec basename {} \;
+ls -R | grep ^[a-z]
+find . -type f | awk -F/ '{print $NF}'
+ls -R | grep [a-zA-Z]
+find . -type f | xargs basename -a
+find . -type f | sed 's|.*/||'
+for i in $(find . -type f); do basename $i; done
+find . -type f | xargs -n1 basename
+find . -type f | xargs -n 1 basename
+find ./ -type f -exec basename {} \;
+find . -type f | sed 's/.*\///'
+find * -type f -exec basename {} \;
+find  -type f -printf "%f\n"
+find -type f | xargs basename -a
+find . -type f -exec basename '{}' \;
+find -type f | grep -o '[^/]*$'
+find . -type f | awk -F/ '{ print $NF }'
+find * -type f -printf '%f\n'
+find ./ -type f -printf '%f\n'
+ls -Rl | grep '^-' | awk '{print $9}'
+find . -type f | awk -F'/' '{print $NF}'
+find * -type f -printf "%f\n"
+find . -type f -exec basename "{}" \;
+basename -a `find . -type f`
+find -type f | rev | cut -d/ -f1 | rev
+find -type f -printf  "%f\n"
+find . -type f | grep -o "[^/]*$"
+find -type f | xargs -n1 basename
+find -type f | grep -o "[^/]*$"
+find . -type f | sed 's/.*\///g'
+find -type f -exec basename '{}' \;
+find . -type f -name "*" -exec basename {} \;
+find . -type f | sed 's|^.*/||'
+find . -type f | xargs -l1 basename
+find . -type f -exec "basename" {} \;
+find -type f -exec basename {} \;\
+find . -type f | xargs -L 1 basename
+find . -type f | rev | cut -d "/" -f 1 | rev
+find -type f -mindepth 1 -exec basename {} \;
