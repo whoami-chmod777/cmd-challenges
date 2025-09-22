@@ -27,7 +27,8 @@
 24. The file sum-me.txt has a list of numbers, one per line. Print the sum of these numbers.
 25. Print all files in the current directory recursively without the leading directory path.
 26. Rename all files removing the extension from them in the current directory recursively.
-27. 
+27. The files in this challenge contain spaces. List all of the files (filenames only) in the current directory but replace all spaces with a '.' character.
+28. 
 
 
 
