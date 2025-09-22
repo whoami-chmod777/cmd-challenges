@@ -1,0 +1,60 @@
+
+Rename all files removing the extension from them in the current directory recursively.
+
+(0)> rm -rf *
+
+
+Correct! You have a new challenge!
+
+
+View Solutions: 
+
+find * -type f | rename 's/\..*//'
+rm -rf *
+rm -r *
+find `pwd` -type f -exec bash -c 'mv "$1" "${1%.*}"' - '{}' \;
+find . -type f -exec rename 's/\.[^.]+$//' {} +
+find . -type f -exec rename 's/\.[^.]+$//' {} \;
+mv * .* | ls
+find . -type f -exec sh -c 'mv "$0" "${0%.*}"' {} \;
+find . -type f -exec bash -c 'mv "$0" "${0%.*}"' {} \;
+find . -type f -exec sh -c 'mv "$1" "${1%.*}"' _ {} \;
+rm -rf * .*
+mv -v * .*
+for f in $(find . -type f -name "*.*"); do mv "$f" "${f%.*}"; done
+rename 's/\..*//' **/*
+find . -type f -execdir rename 's/\.[^.]+$//' {} \;
+find * -type f | rename "s/\..*//"
+find . -type f -name "*.*" -exec sh -c 'mv "$0" "${0%.*}"' {} \;
+find * -type f -exec rename 's/\..*//' {} \;
+find . -type f -name "*.*" -exec bash -c 'for f; do mv "$f" "${f%.*}"; done' _ {} +
+find . -type f -name "*.*" -exec bash -c 'mv "$0" "${0%.*}"' {} \;
+find . -type f -execdir rename 's/\.[^.]+$//' {} +
+find . -type f -name "*.*" | while read file; do mv "$file" "${file%.*}"; done
+rm -rf **
+find . -type f -exec bash -c 'mv "$1" "${1%.*}"' _ {} \;
+mv * .*\
+rename 's/\..*//' **
+find * -type f|rename 's/\..*//'
+find . -type f -exec rename 's/\.[^.]*$//' {} \;
+for f in $(find . -type f); do mv $f ${f%.*}; done
+rm -rvf *
+rm -rf *\
+rename 's/\..*$//' **/*
+find * -type f | rename  's/\..*//'
+find . -type f -exec sh -c 'mv "$1" "${1%.*}"' sh {} \;
+rm -r ./*
+rm -rf * | ls
+find * -type f | rename 's/\.;*//'
+rm rm -rf *
+rm -r ** .*
+mv * .*;ls **
+find . -type f -exec bash -c 'mv "$1" "${1%.*}"' - '{}' \;
+rename -e 's|\..*||' **/*
+for f in **/*.*; do mv "$f" "${f%.*}"; done
+for f in $(find . -type f -name "*.*");do mv $f ${f%.*};done
+find . -type f -name '*.*' -exec sh -c 'mv "$0" "${0%.*}"' {} \;
+for i in $(find . -type f); do mv $i ${i%.*}; done
+rename -v 's/\..*$//' **/*
+find * -type f | rename 's/\..*//';
+find . -type f -execdir sh -c 'mv "$1" "${1%.*}"' sh {} \;
