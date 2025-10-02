@@ -1,0 +1,86 @@
+
+There are a mix of files in this directory that start with letters and numbers. Print the filenames (just the filenames) of all files that start with a number recursively in the current directory.
+
+
+ls -R | grep ^[0-9] | grep -v dir
+
+Correct! You have a new challenge!
+
+1| 04Carrie.Alexander
+2| 132Rebecca.Rubio
+3| 25Brandon.Mcdonald
+4| 293Linda.Bennett
+5| 335John.Joseph
+6| 388Andrew.Carter
+7| 402Nancy.Henson
+8| 42Robert.Hill
+9| 436Teresa.Owens
+10| 477Thomas.Pierce.MD
+11| 48Thomas.Allen
+12| 511Tammy.Welch
+13| 540Katherine.Jones
+14| 593Brett.Martin
+15| 639Charles.Ferguson
+16| 670James.Jacobs
+17| 682Terri.Jones
+18| 737Jeffrey.Davis
+19| 757Robert.Marquez
+20| 778Holly.Archer
+21| 78Michelle.Spencer
+22| 974Michael.Bowman
+23| 3maxime.mp3
+24| 99blanditiis.avi
+
+
+View Solutions:
+
+find -type f -printf '%f\n' | grep ^[0-9]
+basename -s **/[0-9]*
+find . -type f -name '[0-9]*' -exec basename {} \;
+find -type f -printf "%f\n" | grep ^[0-9]
+ls -R | grep ^[0-9] | grep -v dir
+find . -type f -name "[0-9]*" -exec basename {} \;
+find . -type f -name '[0-9]*' -printf '%f\n'
+ls -R | grep '^[0-9]' | grep -v dir
+find . -type f -name "[0-9]*" -printf "%f\n"
+find . -type f -name '[0-9]*' -printf "%f\n"
+find -type f -name "[0-9]*" -exec basename {} \;
+find . -type f -printf "%f\n" | grep ^[0-9]
+basename -s **/[0-9]*;
+ls -R -p | grep -v / | grep "^[0-9]"
+find . -type f -printf '%f\n' | grep ^[0-9]
+find -type f -name '[0-9]*' -exec basename {} \;
+find . -type f -printf "%f\n" | grep '^[0-9]'
+find . -type f -exec basename {} \; | grep ^[0-9]
+find -type f -name "[0-9]*" -printf "%f\n"
+find -type f -exec basename {} \; | grep ^[0-9]
+find . -type f -exec basename {} \; | grep "^[0-9]"
+find . -name "[0-9]*" -type f -exec basename {} \;
+find -type f -name '[0-9]*' -printf '%f\n'
+find . -type f -name '[[:digit:]]*' -printf '%f\n'
+find . -type f -exec basename {} \; | grep '^[0-9]'
+ls **|grep "^[0-9]"|grep -v dir
+find . -type f -name "[0-9]*" -printf '%f\n'
+find . -name '[0-9]*' -type f -printf '%f\n'
+ls -R|grep ^[0-9]|grep -v dir
+ls -R |grep '^[0-9]' | grep -v dir
+ls -R -p | grep -v / | grep ^[0-9]
+find -type f -printf '%f\n'| grep ^[0-9]
+find . -type f -printf '%f\n' | grep '^[0-9]'
+find -type f -printf '%f\n'|grep ^[0-9]
+find . -name '[0-9]*' -type f -printf "%f\n"
+find . -type f -name "[0-9]*"  -printf "%f\n"
+ls -Rp | grep "^[0-9]" | grep -v "/"
+find -type f -printf "%f\n"| grep ^[0-9]
+find * -type f -printf "%f\n" | grep ^[0-9]
+find . -name '[0-9]*' -type f -exec basename {} \;
+find . -type f -printf "%f\n" | grep -E '^[0-9]'
+find -type f -regex ".*/[0-9][^/]*" -printf "%f\n"
+find -type f -printf '%f\n' |grep ^[0-9]
+find . -type f -printf "%f\n" | grep "^[0-9]"
+find -type f -exec basename {} \; | grep "^[0-9]"
+find -type f -name "*" -exec basename {} \; | grep -E '^[0-9]'
+ls -R | grep "^[0-9]" | grep -v dir
+find -type f -exec basename {} \; | grep '^[0-9]'
+find . -type f -name '[01234567890]*' -exec basename {} \;
+find . -type f -regex '.*/[0-9][^/]*$' -exec basename {} \;
