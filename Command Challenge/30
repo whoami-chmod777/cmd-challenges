@@ -1,0 +1,64 @@
+
+Print the 25th line of the file faces.txt
+
+
+head -n 25 faces.txt | tail -n 1
+
+Correct! You have a new challenge!
+
+1| ¯\_(ツ)_/¯
+2|
+
+
+View Solutions:
+
+sed -n '25p' faces.txt
+cat faces.txt | head -25 | tail -1
+head -25 faces.txt | tail -1
+head -n 25 faces.txt | tail -n 1
+sed -n 25p faces.txt
+sed -n "25p" faces.txt
+awk 'NR==25' faces.txt
+cat faces.txt | head -n 25 | tail -n 1
+sed -n "25p" *
+sed '25q;d' faces.txt
+cat faces.txt | sed -n '25p'
+head -n 25 faces.txt | tail -1
+head -n25 faces.txt | tail -n1
+awk "NR==25" faces.txt
+cat faces.txt | head -n 25 | tail -1
+cat faces.txt | awk 'NR==25'
+head -25 faces.txt|tail -1
+head -25 faces.txt |tail -1
+awk 'NR==25 {print $0}' faces.txt
+sed -n '25 p' faces.txt
+cat faces.txt | head -25 |tail -1
+tail -n +25 faces.txt | head -n 1
+cat faces.txt | sed -n "25p"
+cat faces.txt |head -25 | tail -1
+head -25 faces.txt| tail -1
+sed '25!d' faces.txt
+sed "25!d" faces.txt
+sed "25q;d" faces.txt
+cat faces.txt | sed -n 25p
+cat faces.txt|head -25|tail -1
+head -n 25 faces.txt | tail -n1
+cat faces.txt |head -25 |tail -1
+awk '{if(NR==25) print $0}' faces.txt
+sed -n '25p' fac*
+sed -n '25p' *.txt
+sed -n '25p;26q' faces.txt
+cat faces.txt | sed -ne'25p'
+sed -n '25'p faces.txt
+sed -n "25"p faces.txt
+head -n25 faces.txt|tail -n1
+head -n 25 faces.txt|tail -n 1
+cat faces.txt | head -25 | tail -n 1
+cat faces.txt|sed -ne "25p"
+head -n 25 faces* | tail -n 1
+head -n25 faces.txt |tail -n1
+cat faces.txt |head -n 25|tail -n 1
+sed '25q;d'  faces.txt
+head -n 25 faces.txt|tail -1
+head -n25 faces.txt | tail -n 1
+head -n 25 ./faces.txt | tail -n 1
