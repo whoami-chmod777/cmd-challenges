@@ -1,2 +1,66 @@
+
 In this challenge there are some directories containing files with different extensions. Print all directories, one per line without duplicates that contain one or more files with a ".tf" extension.
 
+
+(0)> ls **/*.tf | xargs dirname|sort -u 
+
+Correct! You have a new challenge!
+
+1| terraform
+2| terraform/modules/load_balancer
+3| terraform/modules/virtual_machine
+4| terraform/modules/vpn
+
+
+View Solutions: 
+
+dirname **/*tf | sort -u
+dirname **/*.tf | uniq
+find . -type f -name "*.tf" -exec dirname {} \; | sort -u
+dirname **/*.tf | sort -u
+dirname **/*tf | uniq
+find . -type f -name '*.tf' -printf '%h\n' | uniq
+find . -type f -name "*.tf" -exec dirname {} \; | uniq
+find . -type f -name "*.tf" -printf "%h\n" | sort -u
+find . -type f -name '*.tf' -exec dirname {} \; | sort -u
+find . -type f -name "*.tf" -exec dirname {} \; | sort | uniq
+find . -type f -name "*.tf" -printf '%h\n' | sort -u
+find -type f -name "*.tf" -exec dirname {} \; | sort -u
+dirname **/*.tf|uniq
+find . -type f -name "*.tf" -printf "%h\n" | uniq
+find . -name "*.tf" -exec dirname {} \; | sort -u
+dirname **/*tf |sort -u
+dirname **/*.tf |uniq
+find . -type f -name '*.tf' -exec dirname {} \; | uniq
+find -type f -name "*.tf" -exec dirname {} \; | uniq
+find . -name "*.tf" -type f -exec dirname {} \; | sort | uniq
+dirname **/*.tf |sort -u
+find . -name "*.tf" -printf "%h\n" | sort -u
+dirname **/*tf |uniq
+find . -type f -name '*.tf' -printf '%h\n' | sort -u
+dirname  **/*tf | sort -u
+find -name "*.tf" -exec dirname {} \; | uniq
+find . -name "*.tf" -exec dirname {} \; | uniq
+dirname **/*tf |  uniq
+dirname **/*.tf|sort -u
+dirname **/**tf | sort -u
+find . -name '*.tf' -exec dirname {} \; | uniq
+find -name "*.tf" -exec dirname {} \; | sort -u
+for FILE in $(find . -name "*.tf"); do echo ${FILE%/*}; done | sort -u
+dirname **/*.tf| sort -u
+dirname **/*.tf | uniq -i
+dirname **/*tf  | sort -u
+dirname **/*tf | sort | uniq
+find . -name "*.tf" -type f -exec dirname {} \; | sort -u
+dirname **/*tf|sort -u
+find . -type f -name "*.tf" -printf "%h\n" | sort | uniq
+find . -name '*.tf' -printf '%h\n' | sort -u
+find . -type f -name "*.tf" -printf '%h\n' | uniq
+ls **/*.tf|xargs dirname|sort -u
+dirname `find * -name *.tf`| sort -u
+find * -type f -name "*.tf" -exec dirname {} \; | uniq
+find . -name '*.tf' -printf '%h\n' | uniq
+find . -name "*.tf" | xargs -n 1 dirname | uniq
+find . -name '*.tf' -printf '%h\n' | sort | uniq
+find -type f -name "*.tf" -printf "%h\n"|sort|uniq
+find -type f -name '*.tf' -exec dirname {} \; | uniq
