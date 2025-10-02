@@ -6,7 +6,6 @@ Print all files in the current directory recursively without the leading directo
 
 Correct! You have a new challenge!
 
-
 View Solutions:
 
 find -type f -exec basename {} \;
