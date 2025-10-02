@@ -28,7 +28,37 @@
 25. Print all files in the current directory recursively without the leading directory path.
 26. Rename all files removing the extension from them in the current directory recursively.
 27. The files in this challenge contain spaces. List all of the files (filenames only) in the current directory but replace all spaces with a '.' character.
-28. 
+28. In this challenge there are some directories containing files with different extensions. Print all directories, one per line without duplicates that contain one or more files with a ".tf" extension.
+29. There are a mix of files in this directory that start with letters and numbers. Print the filenames (just the filenames) of all files that start with a number recursively in the current directory.
+30. Print the 25th line of the file faces.txt
+
+31. Print the lines of the file reverse-me.txt in this directory in reverse line order so that the last line is printed first and the first line is printed last.
+
+~~~~~~~~~~~~~~~~~~~~~
+In the future
+Environmental destruction will be the norm
+No longer can it be said that
+My peers and I care about this earth
+It will be evident that
+My generation is apathetic and lethargic
+It is foolish to presume that
+There is hope
+~~~~~~~~~~~~~~~~~~~~~
+-Jonathan Reed "The Lost Generation"
+
+32. 
+33. 
+34. 
+35. 
+36. 
+37. 
+38. 
+
+
+https://cmdchallenge.com/
+
+
+
 
 
 
