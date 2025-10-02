@@ -1,71 +1,112 @@
 
 The files in this challenge contain spaces. List all of the files (filenames only) in the current directory but replace all spaces with a '.' character.
 
-(0)> ls
-
-1| Adam Simpson
-2| Alexis Stein
-3| Allison Brown
-4| Amy Anderson
-5| Angel Saunders
-6| Brad Michael
-7| Briana Wilson
-8| Carrie Alexander
-9| Christine Valdez
-10| Christopher Miller
-11| Claudia Mccormick
-12| Corey Bird
-13| Courtney Miller
-14| Crystal Dunn
-15| Crystal Valdez
-16| Erica Richardson
-17| James Harper
-18| James Roberts
-19| Jared Hill DVM
-20| John Nguyen
-21| Jorge Ross
-22| Joseph Hurst
-23| Karen Ramirez
-24| Kevin Price
-25| Kimberly Parker
-26| Lori Macias
-27| Luke Mason
-28| Lynn Robinson
-29| Mallory Peterson
-30| Marie Gutierrez
-31| Matthew Romero
-32| Michaela Hobbs
-33| Molly Stevens
-34| Mr. James Lopez
-35| Mr. Shawn Martin
-36| Mrs. Jade Clark
-37| Olivia Irwin
-38| Parker Gilbert
-39| Robert Gregory
-40| Robert Hill
-41| Sarah Hill
-42| Scott Rice
-43| Sheri Bishop
-44| Tamara Anderson
-45| Tammy Galloway
-46| Terri Young
-47| Thomas Parks
-48| Thomas Washington
-49| Tiffany Clark
-50| Yvonne Myers
 
 (0)> ls | sed 's/ /./g' 
 
-
 Correct! You have a new challenge!
 
+1| Adam.Simpson
+2| Alexis.Stein
+3| Allison.Brown
+4| Amy.Anderson
+5| Angel.Saunders
+6| Brad.Michael
+7| Briana.Wilson
+8| Carrie.Alexander
+9| Christine.Valdez
+10| Christopher.Miller
+11| Claudia.Mccormick
+12| Corey.Bird
+13| Courtney.Miller
+14| Crystal.Dunn
+15| Crystal.Valdez
+16| Erica.Richardson
+17| James.Harper
+18| James.Roberts
+19| Jared.Hill.DVM
+20| John.Nguyen
+21| Jorge.Ross
+22| Joseph.Hurst
+23| Karen.Ramirez
+24| Kevin.Price
+25| Kimberly.Parker
+26| Lori.Macias
+27| Luke.Mason
+28| Lynn.Robinson
+29| Mallory.Peterson
+30| Marie.Gutierrez
+31| Matthew.Romero
+32| Michaela.Hobbs
+33| Molly.Stevens
+34| Mr..James.Lopez
+35| Mr..Shawn.Martin
+36| Mrs..Jade.Clark
+37| Olivia.Irwin
+38| Parker.Gilbert
+39| Robert.Gregory
+40| Robert.Hill
+41| Sarah.Hill
+42| Scott.Rice
+43| Sheri.Bishop
+44| Tamara.Anderson
+45| Tammy.Galloway
+46| Terri.Young
+47| Thomas.Parks
+48| Thomas.Washington
+49| Tiffany.Clark
+50| Yvonne.Myers
 
 
+View Solutions:
 
-
-
-
-
-
-
-
+ls | tr ' ' '.'
+ls | tr " " "."
+ls | sed 's/\ /\./g'
+ls | sed 's/ /./g'
+find . -type f -printf "%f\n" | xargs -0 -I {} echo {} | tr ' ' '.'
+ls | tr ' ' .
+find . -type f -exec basename {} \; | tr ' ' '.'
+find . -maxdepth 1 -type f -exec basename {} \; | sed 's/ /./g'
+ls | tr " " .
+find . -type f -printf "%f\n" | sed 's/ /./g'
+ls -1 | tr ' ' '.'
+find . -type f -exec basename {} \; | sed 's/ /./g'
+ls | sed "s/ /./g"
+ls -1 | sed 's/ /./g'
+find . -maxdepth 1 -type f -exec basename {} \; | tr ' ' '.'
+ls | sed 's/ /\./g'
+ls |tr ' ' '.'
+find . -maxdepth 1 -type f -printf "%f\n" | sed 's/ /./g'
+find . -maxdepth 1 -type f -printf "%f\n" | tr ' ' '.'
+find . -type f -printf "%f\n" | tr ' ' '.'
+ls|tr ' ' '.'
+ls | sed 's/\ /./g'
+find . -type f -exec basename {} \; | tr " " "."
+ls|tr " " .
+ls |tr " " "."
+ls|tr " " "."
+ls -A | tr ' ' '.'
+ls | tr " " '.'
+ls -1 | tr " " "."
+find * -type f | sed 's/ /\./g'
+ls | sed "s/ /\./g"
+find . -type f -printf '%f\n' | sed 's/ /./g'
+ls -A | tr " " "."
+ls | sed 's/\s/./g'
+ls|tr ' ' .
+for i in *; do echo ${i// /.}; done
+ls | xargs -d "\n" rename "s/ /\./g"; ls
+ls |tr ' ' .
+ls | tr ' ' '. '
+ls | sed 's/\s/\./g'
+for f in *; do echo "${f// /\.}"; done
+find -type f -printf "%f\n"|tr ' ' .
+ls -A | sed 's/ /./g'
+ls -1 | tr " " .
+ls |sed 's/ /./g'
+ls -p | tr ' ' '.'
+ls -1|tr ' ' .
+ls | tr *" " "."
+ls -1 | tr ' ' .
+ls | tr ' ' '.'\
